@@ -96,22 +96,8 @@ ul li {
 }
 
 footer {
-    text-align: center;
-    padding: 10px 0;
     background: #333;
     color: #fff;
-}
-
-footer p {
-    margin: 0;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-i {
-    font-size: 1.2em;
+    text-align: center;
+    padding: 10px 0;
 }
