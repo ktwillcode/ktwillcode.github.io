@@ -3,139 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kartikey Tripathi - Portfolio</title>
+    <title>Kartikeya Tripathi - Interactive Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="header-content">
             <h1>Kartikey Tripathi</h1>
-            <p>Working on use of GenAI, MlOps</p>
+            <p>Working to make models learn</p>
         </div>
+        <canvas id="header-canvas"></canvas>
     </header>
 
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <div class="chat-container">
+        <div class="chat-box" id="chat-box">
+            <div class="chat-message bot-message">Hello! I am Kartikey Tripathi's interactive bot. Ask me about his experience, projects, skills, achievements, or contact details.</div>
         </div>
-    </nav>
-
-    <section id="about" class="container">
-        <h2>About Me</h2>
-        <p>
-            I am a passionate and driven individual, currently focusing on the use cases of Generative AI to drive innovative solutions across various industries. Alongside this, I am deeply engaged in studying AI governance and understanding the ethical, legal, and societal implications of AI technologies. My goal is to contribute to the responsible development and deployment of AI, ensuring it benefits society as a whole.
-        </p>
-        <p>
-            With a background in machine learning, cloud computing, and quantum fields, I strive to push the boundaries of technology. I am actively involved in the tech community through hackathons, conferences, and collaborative projects, always eager to learn and share knowledge.
-        </p>
-    </section>
-
-    <section id="experience" class="container">
-        <h2>Experience</h2>
-         <div class="experience-item">
-            <h3>Multi- Multi-ClassArrhythmia Detection (PPG)</h3>
-            <p><em>Feb 2024 - Present</em></p>
-            <ul>
-                <li>Working on Vision Transformer model to explore possibilities in the field of PPG Signals, along with using a combination of CNN and other techniques. </li>
-                <li>PPG Data collection, Pre-processing, Analysis, Data Augmentation then finding a particular approach to work on.</li>
-                <li>Working under Centre for Biomedical Engineering, IIT Delhi and AIIMS</li>
-            </ul>
-             
-        </div>
-        <div class="experience-item">
-            <h3>SRIP Research Scholar - IITRAM, India</h3>
-            <p><em>May 2023 - Jul 2023</em></p>
-            <ul>
-                <li>Implemented RL & ML on an Energy-Efficient Biplane Quadcopter and created a controller using RL methods on MATLAB.</li>
-                <li>Worked on the soiling of solar panels and implemented different ML techniques for finding optimal cleaning time after analyzing six years of data.</li>
-            </ul>
-        </div>
-      
-        <div class="experience-item">
-            <h3>Contributor - Hacktoberfest, Remote</h3>
-            <p><em>Oct 2022</em></p>
-            <ul>
-                <li>Contributed to 4 different organizations (Microsoft Graspologic, etc.) in the field of web development, bug finding, and documentation.</li>
-                <li>Learned about managing repositories, cloning projects, Git, command line prompts, creating cheatsheets, and basics of web development.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="projects" class="container">
-        <h2>Projects</h2>
-        <div class="project-item">
-            <h3>Seattle Weather Prediction</h3>
-            <p>Conducted weather prediction for Seattle using historical weather data. Applied machine learning techniques such as linear regression, decision trees, and ensemble methods to forecast weather conditions.</p>
-        </div>
-        <div class="project-item">
-            <h3>Air Traffic Prediction and Dashboard Development</h3>
-            <p>Conducted data analysis on air traffic data and developed a comprehensive dashboard showcasing real-time flight details including arrivals and departures, enhancing user accessibility and decision-making processes.</p>
-        </div>
-        <div class="project-item">
-            <h3>Automation of Vehicles</h3>
-            <p>Worked on methods to avoid conflicts at un-signalized roads using RL, Generative AI, and ML. Improved human-driven vehicle interaction with automated vehicles.</p>
-        </div>
-        <div class="project-item">
-            <h3>Gesture Controlled Robot</h3>
-            <p>Built a car controlled using hand gestures, improving human-machine interaction. Used image processing (OpenCV) and gyroscope methods to capture gestures.</p>
-        </div>
-        <div class="project-item">
-            <h3>Indoor Localization Scheme</h3>
-            <p>Finding better indoor localization techniques to help those stuck during natural disasters. First project in college.</p>
-        </div>
-        <div class="project-item">
-            <h3>Studek</h3>
-            <p>Working on a website to help students find scholarships, internships, etc. A collaborative website where users can help update and expand the database.</p>
-        </div>
-    </section>
-
-    <section id="skills" class="container">
-        <h2>Skills</h2>
-        <ul>
-            <li>Python, Data Analysis, Machine Learning (ML), Pandas, Scikit-learn, TensorFlow, PyTorch</li>
-            <li>Signal Processing, Reinforcement Learning (RL), MATLAB, Open source, Django, SQL, HTML/CSS, Git, Linux, LaTeX</li>
-        </ul>
-    </section>
-
-    <section id="achievements" class="container">
-        <h2>Achievements</h2>
-        <ul>
-            <li>Won URA-1 (only project to win this)</li>
-            <li>Top 5% of ML Engineers certified by pro5.ai</li>
-            <li>AWS Machine Learning Foundation 2022 - Udacity & AWS</li>
-            <li>CS 229 & CS 234 - Stanford</li>
-            <li>Learning Web Development - Self</li>
-            <li>Volunteered at State-Level Government Hackathon</li>
-            <li>Core Team Member - Dayatva</li>
-            <li>Founder - Jan Hopes Foundation</li>
-            <li>MEXT Scholarship (Interview Cleared)</li>
-           
-        </ul>
-    </section>
-
-    <section id="contact" class="container">
-        <h2>Contact</h2>
-        <p><strong>Email:</strong> <a href="mailto:kartikeya.kiran24@gmail.com">kartikeya.kiran24@gmail.com</a></p>
-        <p><strong>Phone:</strong> +91 9759221811</p>
-        <p>
-            <strong>Follow me:</strong>
-            <a href="https://www.linkedin.com/in/ktwillcode/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/ktwillcode" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://ktwillcode.github.io/" target="_blank"><i class="fas fa-globe"></i></a>
-        </p>
-    </section>
+        <input type="text" id="chat-input" placeholder="Type your message here..." />
+    </div>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Kartikey Tripathi. All rights reserved.</p>
+            <p>&copy; 2024 Kartikeya Tripathi. All rights reserved.</p>
         </div>
     </footer>
 
