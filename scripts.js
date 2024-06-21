@@ -3,6 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const chatInput = document.getElementById('chat-input');
 
     const responses = {
+        "hi": "Hello! ",
+        "hello": "Hi there!",
+        "hey": "Hey! ",
         "experience": `My experience includes:
         - **Arrhythmia Detection (PPG)** (Feb 2024 - Present): Working on a Vision Transformer model for PPG signals.
         - **SRIP Research Scholar - IITRAM, India** (May 2023 - Jul 2023): Implemented RL & ML on an Energy-Efficient Biplane Quadcopter.
