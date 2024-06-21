@@ -9,7 +9,7 @@ body {
 header {
     position: relative;
     height: 50vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('background.jpg') no-repeat center center/cover;
+    background: url('background.jpg') no-repeat center center/cover;
     color: #ff6600;
     display: flex;
     justify-content: center;
@@ -77,6 +77,28 @@ header p {
     border: 1px solid #555;
     background: #222;
     color: #fff;
+    margin-bottom: 10px;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.options button {
+    background: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.options button:hover {
+    background: #e65c00;
 }
 
 footer {
@@ -85,4 +107,19 @@ footer {
     text-align: center;
     padding: 10px 0;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+    header p {
+        font-size: 1.2em;
+    }
+    .chat-box {
+        width: 95%;
+    }
+    #chat-input {
+        width: 95%;
+    }
 }
