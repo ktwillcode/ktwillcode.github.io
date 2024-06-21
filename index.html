@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kartikeya Tripathi - Interactive Portfolio</title>
+    <title>Kartikey Tripathi - Interactive Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
     <header>
         <div class="header-content">
-            <h1>Kartikeya Tripathi</h1>
+            <h1>Kartikey Tripathi</h1>
             <p>Learning to make models learn</p>
         </div>
         <canvas id="header-canvas"></canvas>
@@ -20,12 +20,19 @@
         <div class="chat-box" id="chat-box">
             <div class="chat-message bot-message">Hello! I am Kartikey Tripathi's interactive portfolio bot. Ask me about his experience, projects, skills, achievements, or contact details.</div>
         </div>
+        <div class="options">
+            <button onclick="addPrompt('experience')">Experience</button>
+            <button onclick="addPrompt('projects')">Projects</button>
+            <button onclick="addPrompt('skills')">Skills</button>
+            <button onclick="addPrompt('achievements')">Achievements</button>
+            <button onclick="addPrompt('contact')">Contact</button>
+        </div>
         <input type="text" id="chat-input" placeholder="Type your message here..." autocomplete="off"/>
     </div>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Kartikeya Tripathi. All rights reserved.</p>
+            <p>&copy; 2024 Kartikey Tripathi. All rights reserved.</p>
         </div>
     </footer>
 
