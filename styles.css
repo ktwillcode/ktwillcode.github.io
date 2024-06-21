@@ -23,21 +23,23 @@ header {
     justify-content: center;
     text-align: center;
     color: #ff6600;
+    margin-bottom: 20px; /* Added margin to separate header from chat container */
 }
 
 header .header-content {
     position: relative;
     z-index: 2;
+    max-width: 600px; /* Adjusted max-width for better alignment */
 }
 
 header h1 {
-    font-size: 3em;
-    margin: 10px 0;
+    font-size: 2.5em; /* Adjusted font size for better alignment */
+    margin: 0;
 }
 
 header p {
-    font-size: 1.5em;
-    margin-top: 10px;
+    font-size: 1.2em; /* Adjusted font size for better alignment */
+    margin-top: 10px; /* Added margin for separation */
 }
 
 /* Chat container styles */
@@ -46,7 +48,7 @@ header p {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    margin-top: -50px;
+    margin-top: -20px; /* Adjusted margin to align with header */
 }
 
 .chat-box {
