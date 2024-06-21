@@ -1,6 +1,5 @@
 body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
     background: #111;
@@ -8,116 +7,74 @@ body {
 }
 
 header {
-    background: #222;
+    position: relative;
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('background.jpg') no-repeat center center/cover;
     color: #ff6600;
-    padding: 1em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header .header-content {
+    position: relative;
+    z-index: 2;
 }
 
 header h1 {
+    font-size: 3.5em;
     margin: 0;
-    font-size: 2.5em;
-    transform: perspective(500px) rotateX(0deg);
-    transition: transform 0.5s;
-}
-
-header h1:hover {
-    transform: perspective(500px) rotateX(20deg);
 }
 
 header p {
-    margin: 0;
-    font-size: 1.2em;
+    font-size: 1.5em;
+    margin: 20px 0 0;
 }
 
-nav {
-    background: #333;
-    color: #fff;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #ff6600;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #fff;
-}
-
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
-section {
-    margin: 20px 0;
-}
-
-section h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #ff6600;
-}
-
-.experience-item, .project-item {
-    background: #222;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.experience-item:hover, .project-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-}
-
-.experience-item h3, .project-item h3 {
-    margin-top: 0;
-}
-
-ul {
-    padding: 0;
-}
-
-ul li {
-    list-style: none;
-    margin: 5px 0;
-}
-
-#skills ul {
+.chat-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
 
-#skills ul li {
+.chat-box {
+    width: 80%;
+    max-width: 600px;
+    height: 400px;
+    overflow-y: scroll;
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.chat-message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.bot-message {
     background: #333;
-    padding: 10px 20px;
-    margin: 5px;
-    border-radius: 20px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-#skills ul li:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+.user-message {
+    background: #ff6600;
+    color: #fff;
+    text-align: right;
+}
+
+#chat-input {
+    width: 80%;
+    max-width: 600px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background: #222;
+    color: #fff;
 }
 
 footer {
