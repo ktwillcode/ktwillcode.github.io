@@ -3,20 +3,27 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
-    color: #333;
+    background: #111;
+    color: #fff;
 }
 
 header {
-    background: #333;
-    color: #fff;
+    background: #222;
+    color: #ff6600;
     padding: 1em 0;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
     margin: 0;
     font-size: 2.5em;
+    transform: perspective(500px) rotateX(0deg);
+    transition: transform 0.5s;
+}
+
+header h1:hover {
+    transform: perspective(500px) rotateX(20deg);
 }
 
 header p {
@@ -25,7 +32,7 @@ header p {
 }
 
 nav {
-    background: #444;
+    background: #333;
     color: #fff;
 }
 
@@ -41,8 +48,13 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #ff6600;
     text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fff;
 }
 
 .container {
@@ -58,14 +70,21 @@ section {
 section h2 {
     text-align: center;
     margin-bottom: 20px;
+    color: #ff6600;
 }
 
 .experience-item, .project-item {
-    background: #fff;
+    background: #222;
     padding: 15px;
     margin-bottom: 10px;
     border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.experience-item:hover, .project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
 .experience-item h3, .project-item h3 {
@@ -88,16 +107,23 @@ ul li {
 }
 
 #skills ul li {
-    background: #fff;
+    background: #333;
     padding: 10px 20px;
     margin: 5px;
     border-radius: 20px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#skills ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
 footer {
-    background: #333;
+    background: #222;
     color: #fff;
     text-align: center;
     padding: 10px 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
 }
