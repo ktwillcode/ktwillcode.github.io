@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "achievements": `Some of my achievements are:
         - AWS Machine Learning Foundation 2022 - Udacity & AWS
         - CS 229 & CS 234 - Stanford
-        - Volunteered at State-Level Government Hackathon
+        - Volunteered at a State-Level Government Hackathon
         - Founder - Jan Hopes Foundation
         - MEXT Scholarship (Interview Cleared)
         - Won URA-1 (only project to win this)
